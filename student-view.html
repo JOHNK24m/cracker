@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Portal | SchoolSys</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/student-view.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- 🔐 Student Login -->
+    <section id="loginSection" class="auth-form">
+      <h2>🎓 Student Login</h2>
+      <form id="studentLoginForm">
+        <input type="text" id="studentClass" placeholder="Class (e.g. 10A)" required />
+        <input type="text" id="studentNumber" placeholder="Class Number (e.g. 5)" required />
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <!-- 📋 Student Info -->
+    <section id="studentInfoSection" style="display: none;">
+      <h2>👋 Welcome, <span id="studentName"></span></h2>
+      <p>Class: <span id="studentClassDisplay"></span> | Number: <span id="studentNumberDisplay"></span></p>
+    </section>
+
+    <!-- 🟢 Attendance -->
+    <section id="attendanceSection" style="display: none;">
+      <h3>📅 Attendance History</h3>
+      <ul id="attendanceList"></ul>
+    </section>
+
+    <!-- 📚 Grades -->
+    <section id="gradesSection" style="display: none;">
+      <h3>📖 Grades</h3>
+      <ul id="gradesList"></ul>
+    </section>
+
+    <!-- 💰 Finance -->
+    <section id="financeSection" style="display: none;">
+      <h3>💵 Finance Records</h3>
+      <ul id="financeList"></ul>
+    </section>
+
+    <!-- 📆 Timetable -->
+    <section id="timetableSection" style="display: none;">
+      <h3>🗓 Timetable</h3>
+      <ul id="timetableList"></ul>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📂 Reports | Academis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/reports.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">🎓 Academis</div>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="students.html">👨‍🎓 Students</a>
+      <a href="teachers.html">👩‍🏫 Teachers</a>
+      <a href="attendance.html">📅 Attendance</a>
+      <a href="finance.html">💰 Finance</a>
+      <a href="reports.html" class="active">📂 Reports</a>
+    </nav>
+  </aside>
+
+  <header>
+    <h1>📂 Reports & Analytics</h1>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <label for="reportClassSelect">Filter by Class:</label>
+      <select id="reportClassSelect">
+        <option value="all">All Classes</option>
+      </select>
+
+      <button onclick="window.print()" class="btn">🖨️ Print Report</button>
+    </section>
+
+    <section class="table-section">
+      <h2>📋 Student Attendance Report</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Class No.</th>
+            <th>Present Days</th>
+            <th>Total Days</th>
+            <th>Attendance %</th>
+          </tr>
+        </thead>
+        <tbody id="attendanceReportBody">
+          <!-- Filled via JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <section class="table-section">
+      <h2>💰 Fee Summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Class</th>
+            <th>Paid ($)</th>
+            <th>Due ($)</th>
+          </tr>
+        </thead>
+        <tbody id="feeReportBody">
+          <!-- Filled via JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

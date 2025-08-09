@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>👨‍👩‍👧‍👦 Parent Dashboard | Academis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/parent-dashboard.js"></script>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <div class="logo">🎓 Academis | Parent</div>
+    <nav>
+      <a href="parent-dashboard.html">🏠 Home</a>
+      <a href="parent-settings.html">⚙️ Settings</a>
+      <a href="parent-login.html">🔐 Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Header -->
+  <header>
+    <h1 id="parentName">👋 Welcome, Parent</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- 📅 Attendance -->
+    <section class="table-section">
+      <h2>📅 Today's Attendance</h2>
+      <p id="studentAttendance">Loading attendance...</p>
+    </section>
+
+    <!-- 🧠 Grades -->
+    <section class="table-section">
+      <h2>🧠 Grades</h2>
+      <div id="studentGrades">Loading grades...</div>
+    </section>
+
+    <!-- 💰 Finance -->
+    <section class="table-section">
+      <h2>💰 Fees & Payments</h2>
+      <div id="studentFinance">Loading finance info...</div>
+    </section>
+
+    <!-- 🗓️ Timetable -->
+    <section class="table-section">
+      <h2>🗓️ Class Timetable</h2>
+      <div id="studentTimetable">Loading timetable...</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Academis | For Parents</p>
+  </footer>
+</body>
+</html>

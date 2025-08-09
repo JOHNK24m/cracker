@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📚 Student Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/spotify-theme.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">🎧 SchoolSys</div>
+    <nav>
+      <a href="student-dashboard.html">🏠 Dashboard</a>
+      <a href="timetable-view.html">📆 Timetable</a>
+      <a href="grades-view.html">📝 Grades</a>
+      <a href="finance-view.html">💰 Finance</a>
+      <a href="attendance-view.html">📅 Attendance</a>
+      <a href="reports-view.html">📂 Reports</a>
+      <a href="login.html" onclick="logout()">🔓 Logout</a>
+    </nav>
+  </aside>
+
+  <main class="container">
+    <h1>Welcome 👋</h1>
+    <p>This dashboard allows you to view your child’s performance and information.</p>
+  </main>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem("currentUser"));
+    if (!user || (user.role !== "student" && user.role !== "parent")) {
+      alert("Access denied");
+      window.location.href = "login.html";
+    }
+
+    function logout() {
+      localStorage.removeItem("currentUser");
+    }
+  </script>
+</body>
+</html>

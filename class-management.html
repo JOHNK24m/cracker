@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Class Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/class-management.js"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="logo">🏫 School Panel</div>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      
+    </nav>
+  </nav>
+
+  <div class="main-content">
+    <header>
+      <h1>🏷️ Class Management</h1>
+    </header>
+
+    <main class="container">
+      <section class="form-section">
+        <h2>Add/Edit Class</h2>
+        <form id="classForm">
+          <input type="hidden" id="classIndex" />
+          <input type="text" id="className" placeholder="Class Name (e.g., 5A)" required />
+          <input type="text" id="teacherName" placeholder="Assigned Teacher" required />
+          <input type="text" id="subject" placeholder="Subject" />
+          <input type="text" id="room" placeholder="Room Number" />
+          <button type="submit">Save Class</button>
+        </form>
+      </section>
+
+      <section class="table-section">
+        <h2>Class List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Teacher</th>
+              <th>Subject</th>
+              <th>Room</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="classTableBody"></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

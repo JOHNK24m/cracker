@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📅 Mark Attendance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/attendance.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">🎓 Academis</div>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      
+      <a href="attendance-table.html">🗂️ Attendance Records</a>
+    </nav>
+  </aside>
+
+  <header>
+    <h1>📅 Mark Class Attendance</h1>
+    <p id="current-date"></p>
+  </header>
+
+  <main class="container">
+    <form id="individualAttendanceForm">
+      <div class="form-section">
+        <label for="classInput">🏷️ Class Name</label>
+        <input type="text" id="classInput" placeholder="e.g. 10-A" required />
+
+        <label for="classNumberInput">🔢 Class Number</label>
+        <input type="number" id="classNumberInput" placeholder="e.g. 3" required />
+
+        <label for="attendanceStatus">📌 Attendance Status</label>
+        <select id="attendanceStatus" required>
+          <option value="">Select status</option>
+          <option value="present">🟢 Present</option>
+          <option value="absent">🔴 Absent</option>
+          <option value="sick">🤢 Sick</option>
+        </select>
+
+        <button type="submit" class="btn primary">✅ Submit Attendance</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 SchoolSys | Accurate Attendance Logging</p>
+  </footer>
+</body>
+</html>

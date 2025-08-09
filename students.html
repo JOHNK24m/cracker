@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Students | School Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/students.js"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="logo">🏫 School Panel</div>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="students-table.html" class="active">👨‍🎓 Students-table</a>
+      
+    </nav>
+  </nav>
+
+  <div class="main-content">
+    <header>
+      <h1>👨‍🎓 Manage Students</h1>
+    </header>
+
+    <main class="container">
+      <section class="form-section">
+        <h2>Add/Edit Student</h2>
+        <form id="studentForm">
+          <input type="hidden" id="studentIndex" />
+          <input type="text" id="name" placeholder="First Name" required />
+          <input type="text" id="surname" placeholder="Last Name" required />
+          <input type="number" id="age" placeholder="Age" required />
+          
+          <!-- 🏷️ Class Select Dropdown -->
+          <select id="classSelect" required>
+            <option value="">Select Class</option>
+          </select>
+
+          <input type="text" id="classNumber" placeholder="Class Number (e.g. 1, 2)" />
+          <input type="text" id="grade" placeholder="Grade (e.g. A+)" required />
+          <input type="email" id="email" placeholder="Student Email" required />
+          <input type="text" id="parentContact" placeholder="Parent Contact" required />
+          <input type="text" id="address" placeholder="Address" required />
+          <button type="submit">Save Student</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

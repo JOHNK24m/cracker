@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>⚙️ Settings | Academis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/settings.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">🎓 Academis | ⚙️ Settings</div>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+    
+      <a href="login.html">🔐 Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="settings-section">
+      <h2>👤 Account Settings</h2>
+      <label>
+        Username:
+        <input type="text" id="username" placeholder="Enter your name">
+      </label>
+      <label>
+        Change Password:
+        <input type="password" id="new-password" placeholder="New Password">
+      </label>
+      <button onclick="saveAccountSettings()">💾 Save Changes</button>
+    </section>
+
+    <section class="settings-section">
+      <h2>🎨 Theme</h2>
+      <label>
+        <input type="checkbox" id="theme-toggle">
+        Enable Dark Mode
+      </label>
+    </section>
+
+    <section class="settings-section">
+      <h2>🔐 Privacy & Backup</h2>
+      <button onclick="backupData()">⬇️ Backup Data</button>
+      <button onclick="resetSystem()">🧹 Reset All Data</button>
+    </section>
+  </main>
+
+  
+  
+</body>
+</html>

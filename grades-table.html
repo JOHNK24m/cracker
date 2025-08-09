@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📋 Grade Table | Academis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/grades-table.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">🎓 Academis</div>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      
+      <a href="grades.html">📘 Add Grades</a>
+      
+    </nav>
+  </aside>
+
+  <!-- Header -->
+  <header>
+    <h1>📋 Student Grades Table</h1>
+  </header>
+
+  <main class="container">
+    <!-- Filters -->
+    <div class="form-section">
+      <label for="gradeClassFilter">Filter by Class:</label>
+      <select id="gradeClassFilter">
+        <option value="all">All Classes</option>
+      </select>
+
+      <label for="gradeSearch">Search:</label>
+      <input
+        type="text"
+        id="gradeSearch"
+        placeholder="🔍 Search by name, class number, or subject"
+        style="width: 100%; margin-bottom: 15px; padding: 10px;"
+      />
+
+      <button onclick="window.print()">🖨️ Print</button>
+    </div>
+
+    <!-- Averages Display -->
+    <div id="gradeAverages" class="form-section">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- Table Section -->
+    <section class="table-section">
+      <table>
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Class</th>
+            <th>Class No.</th>
+            <th>Subject</th>
+            <th>Score</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="gradeTableBody">
+          <!-- Rows will be injected by JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

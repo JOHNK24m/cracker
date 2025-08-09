@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard | School Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/spotify-theme.css" />
+  <script defer src="js/dashboard.js"></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">🎧 SchoolSys</div>
+    <nav>
+      <a href="dashboard.html" class="active">📊 Dashboard</a>
+      <a href="students.html">👨‍🎓 Students</a>
+      <a href="teachers.html">👩‍🏫 Teachers</a>
+      <a href="attendance.html">📅 Attendance</a>
+      <a href="grades.html">📝 Grades</a>
+      <a href="finance.html">💰 Finance</a>
+      <a href="timetable.html">🛠 Timetable Builder</a>
+      <a href="timetable-view.html">📆 Timetable View</a>
+      <a href="reports.html">📂 Reports</a>
+      <a href="settings.html">⚙️ Settings</a>
+      <a href="login.html">🔐 Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Header -->
+  <header>
+    <h1>📊 Dashboard</h1>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <section class="stats">
+      <div class="card" id="totalStudents">👨‍🎓 Students: 0</div>
+      <div class="card" id="totalTeachers">👩‍🏫 Teachers: 0</div>
+      <div class="card" id="attendanceRate">📈 Attendance Rate: 0%</div>
+    </section>
+
+    <section>
+      <a class="btn" href="reports.html">📂 View Reports</a>
+    </section>
+
+    <section class="panel">
+      <h2>📢 Announcements</h2>
+      <form id="announcementForm">
+        <input type="hidden" id="announcementIndex" />
+        <input type="text" id="announcementTitle" placeholder="Title" required />
+        <textarea id="announcementDesc" placeholder="Description" rows="3" required></textarea>
+        <button type="submit" class="btn">Save Announcement</button>
+      </form>
+      <ul id="announcementList"></ul>
+    </section>
+  </main>
+</body>
+</html>

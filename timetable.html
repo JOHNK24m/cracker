@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🛠 Class Timetable Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/timetable.js"></script>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <div class="logo">🎓 Academis</div>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="timetable-view.html">📆 View Timetable</a>
+    </nav>
+  </aside>
+
+  <!-- Header -->
+  <header>
+    <h1>🛠 Class Timetable Planner</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="form-section">
+      <label for="classSelect"><strong>Choose Class:</strong></label>
+      <select id="classSelect"></select>
+
+      <table class="timetable">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Period 1</th>
+            <th>Period 2</th>
+            <th>Period 3</th>
+            <th>Period 4</th>
+            <th>Period 5</th>
+            <th>Period 6</th>
+            <th>Period 7</th>
+            <th>Period 8</th>
+            <th>Period 9</th>
+          </tr>
+        </thead>
+        <tbody id="timetableBody"></tbody>
+      </table>
+
+      <div style="margin-top: 15px;">
+        <button id="saveBtn" class="btn">💾 Save Timetable</button>
+        <button onclick="window.print()" class="btn">🖨️ Print</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

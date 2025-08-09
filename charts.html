@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📈 Charts | Academis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="js/charts.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">🎓 Academis</div>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      
+      <a href="attendance.html">📅 Attendance</a>
+                     
+    </nav>
+  </aside>
+
+  <!-- Header -->
+  <header>
+    <h1>📈 Attendance Charts</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="form-section">
+      <h2>📅 Weekly Attendance Rate</h2>
+      <canvas id="weeklyChart" height="100"></canvas>
+    </section>
+
+    <section class="form-section">
+      <h2>📆 Monthly Attendance Summary</h2>
+      <canvas id="monthlyChart" height="100"></canvas>
+    </section>
+  </main>
+</body>
+</html>

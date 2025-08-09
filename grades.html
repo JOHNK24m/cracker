@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📘 Add Grades | Academis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/grades.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">🎓 Academis</div>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      
+      <a href="grades-table.html">📋 Grade Table</a>
+    </nav>
+  </aside>
+
+  <!-- Header -->
+  <header>
+    <h1>📘 Enter Student Grades by Class</h1>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <form id="gradeForm">
+        <input type="text" id="classInput" placeholder="Class (e.g. 10A)" required />
+        <input type="text" id="classNumberInput" placeholder="Class Number (e.g. 5)" required />
+        <input type="text" id="subjectInput" placeholder="Subject (e.g. Math)" required />
+        <input type="number" id="scoreInput" placeholder="Score (0-100)" min="0" max="100" required />
+        <button type="submit">Save Grade</button>
+      </form>
+
+      <a href="grades-table.html" class="nav-button">📋 View Grade Table</a>
+    </section>
+  </main>
+</body>
+</html>

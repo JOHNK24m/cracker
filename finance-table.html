@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📄 Finance Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/finance-table.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">🎓 Academis</div>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="finance.html">💰 Add Finance</a>
+    </nav>
+  </aside>
+
+  <header>
+    <h1>📄 Finance Records</h1>
+  </header>
+
+  <main class="container">
+    <section class="table-section">
+      <label for="classFilter">Filter by Class:</label>
+      <select id="classFilter">
+        <option value="all">All</option>
+      </select>
+
+      <label for="searchInput">Search:</label>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by student, class, description or type..."
+        style="width: 100%; margin-bottom: 15px; padding: 10px;"
+      />
+
+      <table>
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Class</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="financeTableBody"></tbody>
+      </table>
+
+      <div id="financeTotals" style="margin-top: 20px;"></div>
+    </section>
+  </main>
+</body>
+</html>

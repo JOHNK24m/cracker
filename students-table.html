@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Table by Class</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/students-table.js"></script>
+</head>
+<body>
+  <!-- 🔙 Navigation Buttons -->
+  <div class="button-bar">
+    <a href="dashboard.html" class="nav-button">⬅️ Back to Dashboard</a>
+    <a href="students.html" class="nav-button">👨‍🎓 Add/Edit Student</a>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>📄 Student Table (Grouped by Class)</h1>
+    </header>
+
+    <main class="container" id="classGroupContainer">
+      <!-- 🔍 Search -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search by name, class, or class number..."
+        style="margin-bottom: 20px; padding: 10px; width: 100%"
+      />
+
+      <!-- 🖨️ Print -->
+      <button onclick="window.print()" class="print-button">🖨️ Print Table</button>
+
+      <!-- Class Tables Will Appear Here -->
+    </main>
+  </div>
+</body>
+</html>

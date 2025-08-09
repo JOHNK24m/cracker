@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>⚙️ Settings | Parent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/parents-settings.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">🎓 Parent Settings</div>
+    <nav>
+      <a href="parent-dashboard.html">🏠 Dashboard</a>
+      <a href="parent-login.html">🔐 Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1>⚙️ Parent Settings</h1>
+
+    <!-- 🔐 Account Info -->
+    <section class="settings-section">
+      <h2>👤 Account</h2>
+      <label>
+        Your Name:
+        <input type="text" id="parentName" placeholder="Enter name" />
+      </label>
+      <label>
+        Change Password:
+        <input type="password" id="parentPassword" placeholder="New Password" />
+      </label>
+      <button onclick="saveParentSettings()">💾 Save Changes</button>
+    </section>
+
+    <!-- 🎨 Theme Selection -->
+    <section class="settings-section">
+      <h2>🎨 Theme</h2>
+      <label>
+        Theme:
+        <select id="themeSelect">
+          <option value="spotify">Spotify Theme</option>
+          <option value="facebook">Facebook Theme</option>
+          <option value="dark">Dark Theme</option>
+        </select>
+      </label>
+      <button onclick="applyTheme()">🎨 Apply Theme</button>
+    </section>
+
+    <!-- 💾 Backup/Reset -->
+    <section class="settings-section">
+      <h2>🧩 Privacy & Backup</h2>
+      <button onclick="backupData()">⬇️ Backup Data</button>
+      <button onclick="resetSystem()">🧹 Reset All</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Academis | Parent Portal</p>
+  </footer>
+</body>
+</html>

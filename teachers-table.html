@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teachers Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/teachers-table.js"></script>
+</head>
+<body>
+  <div class="button-bar">
+    <a href="dashboard.html" class="nav-button">⬅️ Back to Dashboard</a>
+    <a href="teachers.html" class="nav-button">👩‍🏫 Add/Edit Teacher</a>
+  </div>
+
+  <div class="main-content">
+    <header><h1>📋 Teacher Directory</h1></header>
+
+    <main class="container" id="teacherTableContainer">
+      <input type="text" id="searchInput" placeholder="🔍 Search by name, subject, department, or class..." style="margin-bottom: 20px; padding: 10px; width: 100%;" />
+      <button onclick="window.print()" class="print-button">🖨️ Print</button>
+    </main>
+  </div>
+</body>
+</html>

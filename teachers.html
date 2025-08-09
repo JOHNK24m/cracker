@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teachers | School Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/teachers.js"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="logo">🏫 School Panel</div>
+    <nav>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="teachers-table.html" class="active">👩‍🏫 Teachers-table</a>
+     
+    </nav>
+  </nav>
+
+  <div class="main-content">
+    <header><h1>👩‍🏫 Manage Teachers</h1></header>
+
+    <main class="container">
+      <section class="form-section">
+        <h2>Add/Edit Teacher</h2>
+        <form id="teacherForm">
+          <input type="hidden" id="teacherIndex" />
+          <input type="text" id="name" placeholder="First Name" required />
+          <input type="text" id="surname" placeholder="Last Name" required />
+          <input type="text" id="email" placeholder="Email" required />
+          <input type="text" id="department" placeholder="Department (e.g., Science)" required />
+          <input type="number" id="experience" placeholder="Years of Experience" required />
+          <input type="text" id="subjects" placeholder="Subjects Taught (comma-separated)" required />
+          <select id="classAssigned" required>
+            <option value="">Assign to Class</option>
+          </select>
+          <button type="submit">Save Teacher</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
